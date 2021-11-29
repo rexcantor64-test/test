@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run Codeowners merge check
-        uses: diogotcorreia/code-owner-self-merge@master
+        uses: diogotcorreia/code-owner-self-merge@always-use-pr-name
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
